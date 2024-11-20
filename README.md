@@ -3,4 +3,6 @@
 
 <a href="https://codeclimate.com/github/ttehasi/python-project-49/maintainability"><img src="https://api.codeclimate.com/v1/badges/0196f25b462ce6f82ac1/maintainability" /></a>
 
-https://asciinema.org/a/5JkOomCYitwZ5YMmXGrbKf7vO
+brain_even: https://asciinema.org/a/5JkOomCYitwZ5YMmXGrbKf7vO
+
+brain_calc: https://asciinema.org/a/daDnWV3XC3pNoNAFgOneXFrU7
