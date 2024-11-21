@@ -7,4 +7,4 @@ brain-even: https://asciinema.org/a/5JkOomCYitwZ5YMmXGrbKf7vO
 
 brain-calc: https://asciinema.org/a/daDnWV3XC3pNoNAFgOneXFrU7
 
-brain-gdc: 
+brain-gdc: https://asciinema.org/a/o4wK1dzQaefQiUzAt2QBRbVBQ
