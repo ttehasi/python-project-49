@@ -53,19 +53,21 @@ def samples(type_game, condition_answer):
     name = prompt.string('May I have your name? ')
     number_of_successful_attempts = 0
     print(condition_answer)
+    correct_answer = ''
     for _ in range(NUMBERS_OF_ATTEMPTS):
         first_number = random.randint(1, 50)
         second_number = random.randint(1, 50)
-        if type_game == 'brain-even':
-            correct_answer = type_brain_even(first_number)
-        elif type_game == 'brain-calc':
-            first_number = random.randint(1, 25)
-            second_number = random.randint(1, 25)
-            correct_answer = type_brain_calc(first_number, second_number)
-        elif type_game == 'brain-gcd':
-            correct_answer = type_brain_gcd(first_number, second_number)
-        else:
-            correct_answer = typo_brain_progression(first_number)
+        match type_game:
+            case 'brain-even':
+                correct_answer = type_brain_even(first_number)
+            case 'brain-calc':
+                first_number = random.randint(1, 25)
+                second_number = random.randint(1, 25)
+                correct_answer = type_brain_calc(first_number, second_number)
+            case 'brain-gcd':
+                correct_answer = type_brain_gcd(first_number, second_number)
+            case 'brain-progression':
+                correct_answer = typo_brain_progression(first_number)
         answer = input('Your answer: ')
         if answer == str(correct_answer):
             number_of_successful_attempts += 1
