@@ -7,7 +7,6 @@ def game_gcd():
 
 
 def main():
-    print('Welcome to the Brain Games!')
     print(game_gcd())
 
 

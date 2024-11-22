@@ -7,7 +7,6 @@ def game_parity_check():
 
 
 def main():
-    print('Welcome to the Brain Games!')
     print(game_parity_check())
 
 

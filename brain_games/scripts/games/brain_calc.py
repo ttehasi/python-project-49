@@ -7,7 +7,6 @@ def calc_game():
 
 
 def main():
-    print('Welcome to the Brain Games!')
     print(calc_game())
 
 

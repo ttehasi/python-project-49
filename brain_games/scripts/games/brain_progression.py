@@ -7,7 +7,6 @@ def game_progression():
 
 
 def main():
-    print('Welcome to the Brain Games!')
     print(game_progression())
 
 

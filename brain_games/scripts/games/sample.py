@@ -50,6 +50,7 @@ def typo_brain_progression(first_num):
 
 
 def samples(type_game, condition_answer):
+    print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     number_of_successful_attempts = 0
     print(condition_answer)
