@@ -33,6 +33,22 @@ def type_brain_gcd(frs_num, sec_num):
     return max(re)
 
 
+def typo_brain_progression(first_num):
+    re = []
+    range_progressing = random.randint(5, 10)
+    sec_num = random.randint(1, 5)
+    for _ in range(range_progressing):
+        re.append(str(first_num))
+        first_num += sec_num
+    index_replace_num = re.index(random.choice(re[1:]))
+    replace_num = re[index_replace_num - 1]
+    re.insert(index_replace_num, '..')
+    re.remove(re[index_replace_num - 1])
+    progressing_str = ' '.join(re)
+    print(f'Question: {progressing_str}')
+    return replace_num
+
+
 def samples(type_game, condition_answer):
     name = prompt.string('May I have your name? ')
     number_of_successful_attempts = 0
@@ -46,8 +62,10 @@ def samples(type_game, condition_answer):
             first_number = random.randint(1, 25)
             second_number = random.randint(1, 25)
             correct_answer = type_brain_calc(first_number, second_number)
-        else:
+        elif type_game == 'brain-gcd':
             correct_answer = type_brain_gcd(first_number, second_number)
+        else:
+            correct_answer = typo_brain_progression(first_number)
         answer = input('Your answer: ')
         if answer == str(correct_answer):
             number_of_successful_attempts += 1
