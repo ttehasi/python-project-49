@@ -49,6 +49,15 @@ def typo_brain_progression(first_num):
     return replace_num
 
 
+def typo_brain_prime(num):
+    re = []
+    for i in range(1, num + 1):
+        if num % i == 0:
+            re.append(i)
+    print(f'Question: {num}')
+    return 'yes' if len(re) == 2 else 'no'
+
+
 def samples(type_game, condition_answer):
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
@@ -69,6 +78,8 @@ def samples(type_game, condition_answer):
                 correct_answer = type_brain_gcd(first_number, second_number)
             case 'brain-progression':
                 correct_answer = typo_brain_progression(first_number)
+            case 'brain-prime':
+                correct_answer = typo_brain_prime(first_number)
         answer = input('Your answer: ')
         if answer == str(correct_answer):
             number_of_successful_attempts += 1
