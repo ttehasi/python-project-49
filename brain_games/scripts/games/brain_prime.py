@@ -1,9 +1,9 @@
-import brain_games.scripts.games.sample
+from brain_games.scripts.games.sample import samples
 
 
 def main():
-    cond_answer = 'Answer "yes" if given number is prime. Otherwise answer "no".'
-    print(brain_games.scripts.games.sample.samples('brain-prime', cond_answer))
+    con_answer = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+    print(samples('brain-prime', con_answer))
 
 
 if __name__ == '__main__':

@@ -86,6 +86,8 @@ def samples(type_game, condition_answer):
             number_of_successful_attempts += 1
             print('Correct!')
         else:
-            return f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'\nLet's try again, {name}!"
+            return (f"'{answer}' is wrong answer ;(. Correct answer was"
+                    f" '{correct_answer}'\n"
+                    f"Let's try again, {name}!")
     if number_of_successful_attempts == NUMBERS_OF_ATTEMPTS:
         return f'Congratulations, {name}!'
