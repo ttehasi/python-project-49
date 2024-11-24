@@ -26,7 +26,7 @@ def type_brain_calc(first_number, sec_number):
 def type_brain_gcd(frs_num, sec_num):
     re = []
     max_num = max(frs_num, sec_num)
-    for i in range(1, max_num):
+    for i in range(1, max_num + 1):
         if frs_num % i == 0 and sec_num % i == 0:
             re.append(i)
     print(f'Question: {frs_num} {sec_num}')
