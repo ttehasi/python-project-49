@@ -1,0 +1,15 @@
+brain_games/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+brain_games/cli.py,sha256=NzNtXMIGSKaJjJWr6chUGCdnOOkgRb_qQtrYM7fWLNg,164
+brain_games/scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+brain_games/scripts/games/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+brain_games/scripts/games/brain_calc.py,sha256=RhAtJIDgjwP7_My9dp_QOnPeOaICV6QXnrN8Mhf_i8s,231
+brain_games/scripts/games/brain_even.py,sha256=8tiLA7wGGYkVO8foD-ruAFh3x7bX6FtKGFFpyTM01hg,252
+brain_games/scripts/games/brain_games.py,sha256=313NujyQ20aznYVAMedpH1V4YfFV4WCj68Hg3TbNvQk,183
+brain_games/scripts/games/brain_gcd.py,sha256=RdjDZiKDQMw8eHQxzY98KcQdSNQCaYO_27iEfkjNxQE,243
+brain_games/scripts/games/brain_prime.py,sha256=OPAlbUnq8JjXl2BeeEGmig5zBhfCpG6rQuJxnemIvmA,256
+brain_games/scripts/games/brain_progression.py,sha256=31xs7bQvdyLHqdTG3eSSyaABOX_OauxoZLLI6qkGokI,243
+brain_games/scripts/games/sample.py,sha256=KS6FokFXp0kK5zgj19PKIYI7SHLF-UBQOolYKB4scco,3047
+hexlet_code-0.5.4.dist-info/METADATA,sha256=d89_DZeDyGK7ujeBFaOse2Fyw2UEE-KJwZPI0Y4h1-U,2085
+hexlet_code-0.5.4.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+hexlet_code-0.5.4.dist-info/entry_points.txt,sha256=oV8qWYrEvSdCGMqkny4scuXFC0A3U-rZV8o6JYyrrRE,353
+hexlet_code-0.5.4.dist-info/RECORD,,
