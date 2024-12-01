@@ -1,10 +1,10 @@
-from prompt import string
+import prompt
 NUMBERS_OF_ATTEMPTS = 3
 
 
 def samples(condition_answer, answ_and_qest, answ_and_qest2, answ_and_qest3):
     print('Welcome to the Brain Games!')
-    name = string('May I have your name? ')
+    name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
     number_of_successful_attempts = 0
     print(condition_answer)
