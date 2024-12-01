@@ -1,4 +1,6 @@
 import prompt
+
+
 NUMBERS_OF_ATTEMPTS = 3
 
 

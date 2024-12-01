@@ -1,12 +1,12 @@
-from brain_games.sample import gen_rand_num
+import random
 from brain_games.sample import samples
 
 
 CON_ANSWER = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def type_brain_prime(numbers):
-    num, sec_number, arithmetic_operation = numbers
+def type_brain_prime():
+    num = random.randint(1, 25)
     re = []
     for i in range(1, num + 1):
         if num % i == 0:
@@ -17,8 +17,8 @@ def type_brain_prime(numbers):
 
 
 def main():
-    samples(CON_ANSWER, type_brain_prime(gen_rand_num()),
-            type_brain_prime(gen_rand_num()), type_brain_prime(gen_rand_num()))
+    samples(CON_ANSWER, type_brain_prime(),
+            type_brain_prime(), type_brain_prime())
 
 
 if __name__ == '__main__':
