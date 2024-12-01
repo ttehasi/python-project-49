@@ -1,4 +1,4 @@
-import random
+from random import randint
 from brain_games.sample import samples
 
 
@@ -6,10 +6,10 @@ CON_ANSWER = 'What number is missing in the progression?'
 
 
 def type_brain_progression():
-    first_num = random.randint(1, 50)
+    first_num = randint(1, 50)
     re = []
-    range_progressing = random.randint(5, 10)
-    sec_num = random.randint(1, 5)
+    range_progressing = randint(5, 10)
+    sec_num = randint(1, 5)
     for _ in range(range_progressing):
         re.append(str(first_num))
         first_num += sec_num

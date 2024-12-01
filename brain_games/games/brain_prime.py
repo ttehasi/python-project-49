@@ -1,4 +1,4 @@
-import random
+from random import randint
 from brain_games.sample import samples
 
 
@@ -6,7 +6,7 @@ CON_ANSWER = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def type_brain_prime():
-    num = random.randint(1, 50)
+    num = randint(1, 50)
     re = []
     for i in range(1, num + 1):
         if num % i == 0:

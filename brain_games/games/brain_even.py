@@ -1,4 +1,4 @@
-import random
+from random import randint
 from brain_games.sample import samples
 
 
@@ -6,7 +6,7 @@ CON_ANSWER = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def type_brain_even():
-    first_number = random.randint(1, 50)
+    first_number = randint(1, 50)
     corr_ans = 'yes' if first_number % 2 == 0 else 'no'
     return (corr_ans,
             f'Question: {first_number}')
