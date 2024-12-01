@@ -1,5 +1,5 @@
 from random import randint, choice
-from brain_games.sample import samples
+import brain_games.sample
 
 
 CON_ANSWER = 'What is the result of the expression?'
@@ -22,8 +22,8 @@ def type_brain_calc():
 
 
 def main():
-    samples(CON_ANSWER, type_brain_calc(),
-            type_brain_calc(), type_brain_calc())
+    brain_games.sample.samples(CON_ANSWER, type_brain_calc(),
+                               type_brain_calc(), type_brain_calc())
 
 
 if __name__ == '__main__':

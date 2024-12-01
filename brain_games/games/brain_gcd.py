@@ -1,5 +1,5 @@
 from random import randint
-from brain_games.sample import samples
+import brain_games.sample
 
 
 CON_ANSWER = 'Find the greatest common divisor of given numbers.'
@@ -18,8 +18,8 @@ def type_brain_gcd():
 
 
 def main():
-    samples(CON_ANSWER, type_brain_gcd(),
-            type_brain_gcd(), type_brain_gcd())
+    brain_games.sample.samples(CON_ANSWER, type_brain_gcd(),
+                               type_brain_gcd(), type_brain_gcd())
 
 
 if __name__ == '__main__':

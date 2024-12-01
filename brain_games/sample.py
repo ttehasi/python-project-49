@@ -1,6 +1,4 @@
 from prompt import string
-
-
 NUMBERS_OF_ATTEMPTS = 3
 
 

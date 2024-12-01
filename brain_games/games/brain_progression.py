@@ -1,11 +1,11 @@
 from random import randint, choice
-from brain_games.sample import samples
+import brain_games.sample
 
 
 CON_ANSWER = 'What number is missing in the progression?'
 
 
-def type_brain_progression():
+def type_brain_progress():
     first_num = randint(1, 50)
     re = []
     range_progressing = randint(5, 10)
@@ -23,8 +23,8 @@ def type_brain_progression():
 
 
 def main():
-    samples(CON_ANSWER, type_brain_progression(),
-            type_brain_progression(), type_brain_progression())
+    brain_games.sample.samples(CON_ANSWER, type_brain_progress(),
+                               type_brain_progress(), type_brain_progress())
 
 
 if __name__ == '__main__':

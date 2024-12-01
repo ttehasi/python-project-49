@@ -1,5 +1,5 @@
 from random import randint
-from brain_games.sample import samples
+import brain_games.sample
 
 
 CON_ANSWER = 'Answer "yes" if the number is even, otherwise answer "no".'
@@ -13,8 +13,8 @@ def type_brain_even():
 
 
 def main():
-    samples(CON_ANSWER, type_brain_even(),
-            type_brain_even(), type_brain_even())
+    brain_games.sample.samples(CON_ANSWER, type_brain_even(),
+                               type_brain_even(), type_brain_even())
 
 
 if __name__ == '__main__':

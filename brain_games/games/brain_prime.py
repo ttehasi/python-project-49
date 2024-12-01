@@ -1,5 +1,5 @@
 from random import randint
-from brain_games.sample import samples
+import brain_games.sample
 
 
 CON_ANSWER = 'Answer "yes" if given number is prime. Otherwise answer "no".'
@@ -17,8 +17,8 @@ def type_brain_prime():
 
 
 def main():
-    samples(CON_ANSWER, type_brain_prime(),
-            type_brain_prime(), type_brain_prime())
+    brain_games.sample.samples(CON_ANSWER, type_brain_prime(),
+                               type_brain_prime(), type_brain_prime())
 
 
 if __name__ == '__main__':
