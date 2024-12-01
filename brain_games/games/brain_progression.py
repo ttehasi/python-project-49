@@ -5,7 +5,8 @@ import random
 CON_ANSWER = 'What number is missing in the progression?'
 
 
-def type_brain_progression(first_num):
+def type_brain_progression():
+    first_num = random.randint(1, 50)
     re = []
     range_progressing = random.randint(5, 10)
     sec_num = random.randint(1, 5)
@@ -22,7 +23,8 @@ def type_brain_progression(first_num):
 
 
 def main():
-    samples('brain-progression', CON_ANSWER)
+    samples(CON_ANSWER, type_brain_progression(),
+            type_brain_progression(), type_brain_progression())
 
 
 if __name__ == '__main__':

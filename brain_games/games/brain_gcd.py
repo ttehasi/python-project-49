@@ -1,10 +1,13 @@
 from brain_games.sample import samples
+import random
 
 
 CON_ANSWER = 'Find the greatest common divisor of given numbers.'
 
 
-def type_brain_gcd(frs_num, sec_num):
+def type_brain_gcd():
+    frs_num = random.randint(1, 50)
+    sec_num = random.randint(1, 50)
     re = []
     max_num = max(frs_num, sec_num)
     for i in range(1, max_num + 1):
@@ -15,7 +18,8 @@ def type_brain_gcd(frs_num, sec_num):
 
 
 def main():
-    samples('brain-gcd', CON_ANSWER)
+    samples(CON_ANSWER, type_brain_gcd(),
+            type_brain_gcd(), type_brain_gcd())
 
 
 if __name__ == '__main__':
