@@ -1,4 +1,4 @@
-from random import randint
+from random import randint, choice
 from brain_games.sample import samples
 
 
@@ -13,7 +13,7 @@ def type_brain_progression():
     for _ in range(range_progressing):
         re.append(str(first_num))
         first_num += sec_num
-    index_replace_num = re.index(random.choice(re[1:]))
+    index_replace_num = re.index(choice(re[1:]))
     replace_num = re[index_replace_num - 1]
     re.insert(index_replace_num, '..')
     re.remove(re[index_replace_num - 1])

@@ -1,4 +1,4 @@
-from random import randint
+from random import randint, choice
 from brain_games.sample import samples
 
 
@@ -9,7 +9,7 @@ def type_brain_calc():
     correct_answer = ''
     first_number = randint(1, 25)
     sec_number = randint(1, 25)
-    arithmetic_operation = random.choice(['+', '-', '*'])
+    arithmetic_operation = choice(['+', '-', '*'])
     match arithmetic_operation:
         case '+':
             correct_answer = first_number + sec_number
