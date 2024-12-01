@@ -1,5 +1,5 @@
-from brain_games.sample import samples
 import random
+from brain_games.sample import samples
 
 
 CON_ANSWER = 'Find the greatest common divisor of given numbers.'

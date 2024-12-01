@@ -1,5 +1,5 @@
-from brain_games.sample import samples
 import random
+from brain_games.sample import samples
 
 
 CON_ANSWER = 'Answer "yes" if given number is prime. Otherwise answer "no".'

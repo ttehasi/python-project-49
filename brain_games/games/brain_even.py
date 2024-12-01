@@ -1,5 +1,5 @@
-from brain_games.sample import samples
 import random
+from brain_games.sample import samples
 
 
 CON_ANSWER = 'Answer "yes" if the number is even, otherwise answer "no".'
