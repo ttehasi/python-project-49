@@ -1,5 +1,15 @@
 import prompt
+import random
+
+
 NUMBERS_OF_ATTEMPTS = 3
+
+
+def gen_rand_num():
+    frs_num = random.randint(1, 25)
+    sec_num = random.randint(1, 25)
+    arithmetic_operation = random.choice(['+', '-', '*'])
+    return frs_num, sec_num, arithmetic_operation
 
 
 def samples(condition_answer, answ_and_qest, answ_and_qest2, answ_and_qest3):

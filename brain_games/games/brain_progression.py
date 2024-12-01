@@ -1,19 +1,20 @@
-from random import randint, choice
-import brain_games.sample
+import random
+from brain_games.sample import gen_rand_num
+from brain_games.sample import samples
 
 
 CON_ANSWER = 'What number is missing in the progression?'
 
 
-def type_brain_progress():
-    first_num = randint(1, 50)
+def type_brain_progress(numbers):
+    first_num, sec_number, arithmetic_operation = numbers
     re = []
-    range_progressing = randint(5, 10)
-    sec_num = randint(1, 5)
+    range_progressing = random.randint(5, 10)
+    sec_num = random.randint(1, 5)
     for _ in range(range_progressing):
         re.append(str(first_num))
         first_num += sec_num
-    index_replace_num = re.index(choice(re[1:]))
+    index_replace_num = re.index(random.choice(re[1:]))
     replace_num = re[index_replace_num - 1]
     re.insert(index_replace_num, '..')
     re.remove(re[index_replace_num - 1])
@@ -23,8 +24,9 @@ def type_brain_progress():
 
 
 def main():
-    brain_games.sample.samples(CON_ANSWER, type_brain_progress(),
-                               type_brain_progress(), type_brain_progress())
+    samples(CON_ANSWER, type_brain_progress(gen_rand_num()),
+            type_brain_progress(gen_rand_num()),
+            type_brain_progress(gen_rand_num()))
 
 
 if __name__ == '__main__':

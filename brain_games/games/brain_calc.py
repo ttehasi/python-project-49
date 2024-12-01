@@ -1,15 +1,13 @@
-from random import randint, choice
-import brain_games.sample
+from brain_games.sample import gen_rand_num
+from brain_games.sample import samples
 
 
 CON_ANSWER = 'What is the result of the expression?'
 
 
-def type_brain_calc():
+def type_brain_calc(numbers):
     correct_answer = ''
-    first_number = randint(1, 25)
-    sec_number = randint(1, 25)
-    arithmetic_operation = choice(['+', '-', '*'])
+    first_number, sec_number, arithmetic_operation = numbers
     match arithmetic_operation:
         case '+':
             correct_answer = first_number + sec_number
@@ -22,8 +20,8 @@ def type_brain_calc():
 
 
 def main():
-    brain_games.sample.samples(CON_ANSWER, type_brain_calc(),
-                               type_brain_calc(), type_brain_calc())
+    samples(CON_ANSWER, type_brain_calc(gen_rand_num()),
+            type_brain_calc(gen_rand_num()), type_brain_calc(gen_rand_num()))
 
 
 if __name__ == '__main__':
