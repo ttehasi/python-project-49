@@ -1,6 +1,6 @@
 import random
-from brain_games.sample import samples
 
+from brain_games.sample import samples
 
 CON_ANSWER = 'What number is missing in the progression?'
 
