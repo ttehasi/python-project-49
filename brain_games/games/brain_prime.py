@@ -17,8 +17,7 @@ def type_brain_prime():
 
 
 def main():
-    samples(CON_ANSWER, type_brain_prime(),
-            type_brain_prime(), type_brain_prime())
+    samples(CON_ANSWER, type_brain_prime)
 
 
 if __name__ == '__main__':

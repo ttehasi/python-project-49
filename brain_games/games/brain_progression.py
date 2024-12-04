@@ -23,9 +23,7 @@ def type_brain_progress():
 
 
 def main():
-    samples(CON_ANSWER, type_brain_progress(),
-            type_brain_progress(),
-            type_brain_progress())
+    samples(CON_ANSWER, type_brain_progress)
 
 
 if __name__ == '__main__':

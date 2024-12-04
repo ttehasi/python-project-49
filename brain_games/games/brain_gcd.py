@@ -18,8 +18,7 @@ def type_brain_gcd():
 
 
 def main():
-    samples(CON_ANSWER, type_brain_gcd(),
-            type_brain_gcd(), type_brain_gcd())
+    samples(CON_ANSWER, type_brain_gcd)
 
 
 if __name__ == '__main__':

@@ -13,8 +13,7 @@ def type_brain_even():
 
 
 def main():
-    samples(CON_ANSWER, type_brain_even(),
-            type_brain_even(), type_brain_even())
+    samples(CON_ANSWER, type_brain_even)
 
 
 if __name__ == '__main__':

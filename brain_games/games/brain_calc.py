@@ -22,8 +22,7 @@ def type_brain_calc():
 
 
 def main():
-    samples(CON_ANSWER, type_brain_calc(),
-            type_brain_calc(), type_brain_calc())
+    samples(CON_ANSWER, type_brain_calc)
 
 
 if __name__ == '__main__':
